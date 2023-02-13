@@ -1,0 +1,111 @@
+header{
+  padding: 1rem 7%;
+  height: 6.5rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 199, 0, .95);  
+  border-bottom: 1px solid #62482e;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.btn-header, .logo-img{
+  display: flex;
+  align-items: center;
+}
+
+/* before login */
+.btn-header .pre-login a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  width: 110px;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  background-color: var(--btn-primary);
+  padding: 0.5rem 0;
+  margin-left: 1rem;
+  border-radius: .3rem;
+}
+
+/* after login */
+.btn-header .pra-login{
+  display: flex;
+  align-items: center;
+}
+
+.btn-header .pra-login a {
+  margin-right: 1.5rem;
+}
+
+.btn-header .pra-login .user-img{
+  width: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--btn-primary);
+}
+
+/* swict active */
+.btn-header .pra-login, .btn-header .pre-login{
+  display: none;
+}
+
+.btn-header .pra-login.active, .btn-header .pre-login.active{
+  display: flex;
+}
+
+#hamburger-menu, #hamburger-menu.non-active{
+  display: none;
+}
+
+
+/* Media Queries */
+/* Laptop/Notebook */
+@media (max-width: 1366px) {
+  
+}
+
+/* tablet */
+@media (max-width: 767px) {
+  #hamburger-menu{
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .btn-header .pre-login{
+    position: absolute;
+    background-color: var(--primary);
+    top: -2000%;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: .3s;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-header .pre-login.sidebar{
+    top: 100%;
+  }
+
+  .btn-header .pre-login a{
+    font-size: 1.8rem;
+    width: 60%;
+    padding: 1.5rem 0;
+    margin-left: 0;
+    margin-top: 2.5rem;
+    border-radius: .5rem;
+  }
+
+  .btn-header .pra-login .user-img{
+    width: 40px;
+  }
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  
+}

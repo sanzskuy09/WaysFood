@@ -1,0 +1,33 @@
+.popular-restaurant{
+  padding: 7rem 9% 0;
+}
+
+.popular-restaurant h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.popular-restaurant .row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.popular-restaurant .row .card{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.popular-restaurant .row .card img{
+  width: 65px;
+  margin-right: 1rem;
+}
+
+.popular-restaurant .row .card p{
+  font-size: 1.8rem;
+  font-weight: 800;
+}

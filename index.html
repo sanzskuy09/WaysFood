@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waysfood</title>
+
+    <link rel="icon" href="Icon.svg" />
+
+    <!-- Css stryles -->
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/jumbotron.css" />
+    <link rel="stylesheet" href="css/popular-restauran.css" />
+    <link rel="stylesheet" href="css/near-restaurant.css" />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <a href="/" class="logo-img">
+        <img src="image/icon/logo.svg" alt="logo waysfood" />
+      </a>
+
+      <div class="btn-header">
+        <div class="pre-login active">
+          <a href="#">Register</a>
+          <a id="login">Login</a>
+        </div>
+        <a id="hamburger-menu">
+          <i data-feather="menu"></i>
+        </a>
+
+        <div class="pra-login">
+          <a href="/" id="logout">
+            <img src="image/icon/cart-logo.svg" alt="cart-logo" />
+          </a>
+          <img src="image/img/user.jpg" alt="User" class="user-img" />
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- jumbroton start -->
+    <section class="jumbotron">
+      <div class="row">
+        <div class="jumbotron-title">
+          <h1>Are You Hungry ?</h1>
+          <h1>Express Home Delivery</h1>
+
+          <div class="sub-title">
+            <div class="line"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+              deserunt? Illum minus hic saepe neque obcaecati est cumque
+              expedita consequuntur, a quae. Reiciendis, atque enim!
+            </p>
+          </div>
+
+          <a href="#restaurant" class="cta">More Restaurant</a>
+        </div>
+
+        <div class="jumbotron-img">
+          <img src="image/img/jumbotron.png" alt="pizza" />
+        </div>
+      </div>
+    </section>
+    <!-- jumbroton end -->
+
+    <!-- Popular restaurant start -->
+    <section class="popular-restaurant">
+      <h1>Popular Restaurant</h1>
+      <div class="row">
+        <div class="card">
+          <img src="image/img/burger-king.png" alt="restaurant-icon" />
+          <p>Burger King</p>
+        </div>
+        <div class="card">
+          <img src="image/img/jco.png" alt="restaurant-icon" />
+          <p>JCO</p>
+        </div>
+        <div class="card">
+          <img src="image/img/starbuck.png" alt="restaurant-icon" />
+          <p>Starbucks</p>
+        </div>
+        <div class="card">
+          <img src="image/img/kfc.png" alt="restaurant-icon" />
+          <p>KFC</p>
+        </div>
+      </div>
+    </section>
+    <!-- Popular restaurant end -->
+
+    <!-- Near Reastaurant start -->
+    <section class="near-restaurant" id="restaurant">
+      <h1>Restaurant Near You</h1>
+
+      <div class="row">
+        <div class="card-restaurant">
+          <img src="image/img/geprek-bensu.png" alt="restaurant-icon" />
+          <h5>Geprek Bensu</h5>
+          <p>0,2 KM</p>
+        </div>
+        <div class="card-restaurant">
+          <img src="image/img/nasi-goreng.png" alt="restaurant-icon" />
+          <h5>Nasi Goreng Mas Rony</h5>
+          <p>0,2 KM</p>
+        </div>
+        <div class="card-restaurant">
+          <img src="image/img/pecel-ayam.png" alt="restaurant-icon" />
+          <h5>Pecel Ayam Prambanan</h5>
+          <p>0,2 KM</p>
+        </div>
+        <div class="card-restaurant">
+          <img src="image/img/kopi-kenangan.png" alt="restaurant-icon" />
+          <h5>Kopi Kenangan</h5>
+          <p>0,2 KM</p>
+        </div>
+      </div>
+    </section>
+    <!-- Near Reastaurant end -->
+
+    <script src="js/login.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>

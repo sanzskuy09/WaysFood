@@ -1,0 +1,37 @@
+.near-restaurant{
+  padding: 8rem 9% 4rem;
+}
+
+.near-restaurant h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.near-restaurant .row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.near-restaurant .row .card-restaurant{
+  background-color: #fff;
+  padding: 1rem 1rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.near-restaurant .row .card-restaurant img{
+  width: 100%;
+}
+
+.near-restaurant .row .card-restaurant h5{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: .5rem 0;
+}
+
+.near-restaurant .row .card-restaurant p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
