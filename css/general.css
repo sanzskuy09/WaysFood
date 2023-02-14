@@ -33,6 +33,10 @@ button{
   background-color: cadetblue;
 }
 
+a{
+  color: #000;
+}
+
 /* ========================= Media Queries ========================== */
 /* Laptop/Notebook */
 @media (max-width: 1366px) {

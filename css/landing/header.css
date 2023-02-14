@@ -9,7 +9,7 @@ header{
   top: 0;
   right: 0;
   left: 0;
-  z-index: 100;
+  z-index: 10;
 }
 
 .btn-header, .logo-img{
@@ -29,6 +29,7 @@ header{
   padding: 0.5rem 0;
   margin-left: 1rem;
   border-radius: .3rem;
+  cursor: pointer;
 }
 
 /* after login */

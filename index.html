@@ -10,10 +10,11 @@
 
     <!-- Css stryles -->
     <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/jumbotron.css" />
-    <link rel="stylesheet" href="css/popular-restauran.css" />
-    <link rel="stylesheet" href="css/near-restaurant.css" />
+    <link rel="stylesheet" href="css/landing/header.css" />
+    <link rel="stylesheet" href="css/landing/modal.css" />
+    <link rel="stylesheet" href="css/landing/jumbotron.css" />
+    <link rel="stylesheet" href="css/landing/popular-restauran.css" />
+    <link rel="stylesheet" href="css/landing/near-restaurant.css" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -27,15 +28,15 @@
 
       <div class="btn-header">
         <div class="pre-login active">
-          <a href="#">Register</a>
-          <a id="login">Login</a>
+          <a id="btnRegister">Register</a>
+          <a id="btnLogin">Login</a>
         </div>
         <a id="hamburger-menu">
           <i data-feather="menu"></i>
         </a>
 
         <div class="pra-login">
-          <a href="/" id="logout">
+          <a href="#">
             <img src="image/icon/cart-logo.svg" alt="cart-logo" />
           </a>
           <img src="image/img/user.jpg" alt="User" class="user-img" />
@@ -43,6 +44,61 @@
       </div>
     </header>
     <!-- Header end -->
+
+    <!-- Modal Register start -->
+    <div class="modal" id="modalRegister">
+      <div class="auth-content">
+        <h1>Register</h1>
+        <form>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="off"
+          /><br />
+          <input type="password" name="password" placeholder="Password" /><br />
+          <input type="text" name="name" placeholder="Full Name" /><br />
+          <input type="text" name="gender" placeholder="Gender" /><br />
+          <input type="number" name="phone" placeholder="Phone" /><br />
+          <select name="user">
+            <option value="User">As User</option>
+            <option value="Partner">As Partner</option></select
+          ><br />
+
+          <button type="button" id="register">Register</button>
+
+          <p>
+            Already have an account ? Klik
+            <a id="openLogin" style="cursor: pointer">Here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- Modal Register end -->
+
+    <!-- Modal Login start -->
+    <div class="modal" id="modalLogin">
+      <div class="auth-content">
+        <h1>Login</h1>
+        <form>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            autocomplete="off"
+          /><br />
+          <input type="password" name="password" placeholder="Password" /><br />
+
+          <button type="button" id="login">Login</button>
+
+          <p>
+            Don't have an account ? Klik
+            <a id="openRegister" style="cursor: pointer">Here</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <!-- Modal Login end -->
 
     <!-- jumbroton start -->
     <section class="jumbotron">
@@ -100,9 +156,11 @@
 
       <div class="row">
         <div class="card-restaurant">
-          <img src="image/img/geprek-bensu.png" alt="restaurant-icon" />
-          <h5>Geprek Bensu</h5>
-          <p>0,2 KM</p>
+          <a href="pages/detailMenu.html">
+            <img src="image/img/geprek-bensu.png" alt="restaurant-icon" />
+            <h5>Geprek Bensu</h5>
+            <p>0,2 KM</p>
+          </a>
         </div>
         <div class="card-restaurant">
           <img src="image/img/nasi-goreng.png" alt="restaurant-icon" />
