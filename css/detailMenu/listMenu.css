@@ -1,0 +1,66 @@
+.list-menu{
+  min-height: 100vh;
+  padding: 10rem 10% 0;
+}
+
+.list-menu h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+.list-menu .row{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem 1rem;
+}
+
+.list-menu .row .card-menu{
+  background-color: #fff;
+  padding: 1rem 1rem 1.2rem;
+  border-radius: .3rem;
+}
+
+.list-menu .row .card-menu img{
+  width: 100%;
+}
+
+.list-menu .row .card-menu h5{
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: .5rem 0;
+}
+
+.list-menu .row .card-menu p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #FF1515;
+  margin-bottom: 1rem;
+}
+
+.list-menu .row .card-menu button{
+  width: 100%;
+  background-color: var(--primary);
+  border-radius: .4rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--btn-primary);
+  letter-spacing: 1px;
+  cursor: pointer;
+  padding: 0.7rem 0;
+}
+
+/* ========================= Media Queries ========================== */
+
+/* Handphone */
+@media (max-width: 450px) {
+  .list-menu .row .card-menu h5{
+    font-size: 1.8rem;
+  }
+  
+  .list-menu .row .card-menu p {
+    font-size: 1.2rem;
+  }
+}
