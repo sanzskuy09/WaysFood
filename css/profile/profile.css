@@ -1,0 +1,162 @@
+.profile{
+  min-height: 100vh;
+  padding: 10rem 10% 2rem;
+}
+
+.profile .row h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.profile .row{
+  display: flex;
+}
+
+/* Detail Profile */
+.profile .row .detail{
+  flex: 1 1 40rem;
+}
+
+.profile .row .detail .wrapper{
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+.profile .row .detail .wrapper img{
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+  width: 100%;
+  max-width: 240px;
+  object-fit: cover;
+}
+
+.profile .row .detail .wrapper .data .data-group{
+  margin-bottom: 2rem;
+}
+
+.profile .row .detail .wrapper .data .data-group h3{
+  color: #613D2B;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.profile .row .detail .wrapper .data .data-group p{
+  font-size: 1.5rem;
+}
+
+/* button edit profile */
+/* .profile .row .detail button {
+  width: 240px;
+  background-color: var(--btn-primary);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+} */
+
+.profile .row .detail .edit {
+  display: inline-block;
+  width: 240px;
+  background-color: var(--btn-primary);
+  border-radius: 0.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* history order & transaction */
+.profile .row .history{
+  /* background-color: red; */
+  flex: 1 1 35rem;
+}
+
+.profile .row .history .card .card-history{
+  background-color: #fff;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Roboto', sans-serif;
+  padding: 1.5rem 1rem;
+}
+
+.profile .row .history .card .card-history .data-user h5{
+  font-size: 1.4rem;
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+}
+
+.profile .row .history .card .card-history .data-user p{
+  font-size: 1rem;
+}
+
+.profile .row .history .card .card-history .data-user .price{
+  font-size: 1.1rem;
+  color: #974A4A;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.profile .row .history .card .card-history .data-restaurant{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.profile .row .history .card .card-history .data-restaurant button{
+  padding: 2px 2rem;
+  margin-top: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.profile .row .history .card .card-history .data-restaurant button.finish{
+  background-color: #00ff8425;
+  color: #00ad31;
+}
+.profile .row .history .card .card-history .data-restaurant button.cancel{
+  background-color: #e839391f;
+  color: #c53131;
+}
+.profile .row .history .card .card-history .data-restaurant button.waiting{
+  background-color: #00d0ff30;
+  color: #00b4dd;
+}
+
+
+/* ========================= Media Queries ========================== */
+/* Laptop/Notebook */
+@media (max-width: 1366px) {
+  .profile .row{
+    flex-wrap: wrap;
+  }
+
+  .profile .row .detail{
+    margin-bottom: 6rem;
+  }
+}
+
+/* tablet */
+@media (max-width: 767px) {
+  
+}
+
+/* Handphone */
+@media (max-width: 450px) {
+  .profile .row .detail .wrapper img{
+    width: 120px;
+  }
+
+  .profile .row .detail .edit {
+    width: 120px;
+  }
+}

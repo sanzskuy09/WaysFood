@@ -1,0 +1,63 @@
+.dashboard{
+  min-height: 100vh;
+  padding: 10rem 10%;
+}
+
+.dashboard h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.dashboard table {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
+  min-width: 60rem;
+  /* overflow-x:auto; */
+}
+
+.dashboard table th, .dashboard table td{
+  padding: .8rem;
+}
+
+.dashboard table th{
+  font-weight: 800;
+}
+
+.dashboard table tr .btn-wrapper{
+  display: flex;
+  gap: 1rem;
+  border: none;
+  flex-wrap: wrap;
+}
+
+.dashboard table tr .btn-wrapper .btn{
+  cursor: pointer;
+  height: max-content;
+  border-radius: .5rem;
+  width: 100%;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+}
+
+.dashboard table tr .btn-wrapper .btn-danger{
+  background-color: #FF0742;
+}
+.dashboard table tr .btn-wrapper .btn-success{
+  background-color: #0ACF83;
+}
+
+th:nth-child(4), td:nth-child(4){
+  /* background-color: #FF0742; */
+  width: 40%;
+  max-width: 40%;
+}
+
+th:nth-child(6), td:nth-child(6):no-button{
+  width: 10%;
+  max-width: 15%;
+}

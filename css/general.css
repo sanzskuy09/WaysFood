@@ -28,13 +28,34 @@ body{
   background-color: #EFEFEF;
 }
 
-button{
-  padding: 1rem;
-  background-color: cadetblue;
-}
-
 a{
   color: #000;
+}
+
+table, th ,td{
+  border-collapse: collapse;
+  border: 1px solid #828282;
+}
+
+/* text color */
+.text-warning {
+  color: #FF9900;
+}
+
+.text-success{
+  color: #78A85A;
+}
+
+.text-danger{
+  color: #E83939;
+}
+
+.text-primary{
+  color:#00D1FF;
+}
+
+.center{
+  text-align: center;
 }
 
 /* ========================= Media Queries ========================== */

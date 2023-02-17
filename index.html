@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/landing/jumbotron.css" />
     <link rel="stylesheet" href="css/landing/popular-restauran.css" />
     <link rel="stylesheet" href="css/landing/near-restaurant.css" />
+    <link rel="stylesheet" href="css/detailMenu/listMenu.css" />
 
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
@@ -36,10 +37,31 @@
         </a>
 
         <div class="pra-login">
-          <a href="#">
+          <a href="#" class="cart">
             <img src="image/icon/cart-logo.svg" alt="cart-logo" />
           </a>
-          <img src="image/img/user.jpg" alt="User" class="user-img" />
+          <img src="image/img/user.jpg" alt="User" class="user-img" id="user" />
+        </div>
+
+        <!-- sub-menu -->
+        <div class="sub-menu">
+          <div class="menu">
+            <div class="menu-link">
+              <img src="image/icon/profile.svg" alt="profile" />
+              <a href="pages/userPage/profile.html">Profile</a>
+            </div>
+            <div class="menu-link">
+              <img src="image/icon/profile.svg" alt="profile" />
+              <a href="pages/partnerPage/dashboard.html">Dashboard (Partner)</a>
+            </div>
+          </div>
+          <hr />
+          <div class="menu">
+            <div class="menu-link">
+              <img src="image/icon/logout.svg" alt="logout" />
+              <a href="/">Logout</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -156,7 +178,7 @@
 
       <div class="row">
         <div class="card-restaurant">
-          <a href="pages/detailMenu.html">
+          <a href="pages/userPage/detailMenu.html">
             <img src="image/img/geprek-bensu.png" alt="restaurant-icon" />
             <h5>Geprek Bensu</h5>
             <p>0,2 KM</p>
@@ -182,6 +204,7 @@
     <!-- Near Reastaurant end -->
 
     <script src="js/login.js"></script>
+    <script src="js/menuLink.js"></script>
 
     <script>
       feather.replace();
