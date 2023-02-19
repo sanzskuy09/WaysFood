@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waysfood</title>
+
+    <link rel="icon" href="/Icon.svg" />
+
+    <!-- Css stryles -->
+    <link rel="stylesheet" href="/css/general.css" />
+    <link rel="stylesheet" href="/css/landing/header.css" />
+    <link rel="stylesheet" href="/css/cartOrder/cartOrder.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+    <header>
+      <a href="/" class="logo-img">
+        <img src="/image/icon/logo.svg" alt="logo waysfood" />
+      </a>
+
+      <div class="btn-header">
+        <div class="pra-login active">
+          <a href="cartOrder.html" class="cart">
+            <img src="/image/icon/cart-logo.svg" alt="cart-logo" />
+          </a>
+          <img
+            src="/image/img/user.jpg"
+            alt="User"
+            class="user-img"
+            id="user"
+          />
+        </div>
+
+        <!-- sub-menu -->
+        <div class="sub-menu">
+          <div class="menu">
+            <div class="menu-link">
+              <img src="/image/icon/profile.svg" alt="profile" />
+              <a href="profile.html">Profile</a>
+            </div>
+          </div>
+          <hr />
+          <div class="menu">
+            <div class="menu-link">
+              <img src="/image/icon/logout.svg" alt="logout" />
+              <a href="/">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Cart detail start -->
+    <section class="cart-order">
+      <h1>Geprek Bensu</h1>
+
+      <!-- location map -->
+      <div class="location">
+        <h4>Delivery Location</h4>
+
+        <form>
+          <input
+            type="text"
+            name="address"
+            placeholder="Bank BJB Depok"
+            autocomplete="off"
+          />
+          <button class="map" type="button" id="btn-map">
+            Select On Map <img src="/image/icon/map.svg" alt="map" />
+          </button>
+        </form>
+      </div>
+
+      <!-- Review order -->
+      <div class="order">
+        <h4>Review Your Order</h4>
+
+        <div class="row">
+          <div class="order-detail">
+            <hr />
+            <div class="menu">
+              <img
+                src="/image/img/menu/1.png"
+                alt="menu-image"
+                width="100"
+                class="menu-image"
+              />
+              <div class="row-menu">
+                <div class="row-1">
+                  <p class="name">Paket Geprek</p>
+                  <p class="price">Rp 15.000</p>
+                </div>
+                <div class="row-2">
+                  <div class="qty">
+                    <p class="minus">-</p>
+                    <p class="qty-number">1</p>
+                    <p class="plus">+</p>
+                  </div>
+                  <img src="/image/icon/trash.svg" alt="trash-icon" />
+                </div>
+              </div>
+            </div>
+
+            <hr />
+            <div class="menu">
+              <img
+                src="/image/img/menu/2.png"
+                alt="menu-image"
+                width="100"
+                class="menu-image"
+              />
+              <div class="row-menu">
+                <div class="row-1">
+                  <p class="name">Paket Geprek Keju</p>
+                  <p class="price">Rp 20.000</p>
+                </div>
+                <div class="row-2">
+                  <div class="qty">
+                    <p class="minus">-</p>
+                    <p class="qty-number">1</p>
+                    <p class="plus">+</p>
+                  </div>
+                  <img src="/image/icon/trash.svg" alt="trash-icon" />
+                </div>
+              </div>
+            </div>
+
+            <hr />
+          </div>
+
+          <div class="subtotal">
+            <!-- <hr /> -->
+            <div class="count-price">
+              <div class="row-price">
+                <p>Subtotal</p>
+                <p class="price">Rp. 35.000</p>
+              </div>
+              <div class="row-price">
+                <p>Qty</p>
+                <p>2</p>
+              </div>
+              <div class="row-price">
+                <p>Ongkir</p>
+                <p class="price">Rp. 10.000</p>
+              </div>
+            </div>
+
+            <hr />
+
+            <div class="row-total">
+              <p>Total</p>
+              <p>Rp. 45.000</p>
+            </div>
+
+            <a href="profile.html">Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cart detail end -->
+
+    <!-- Maps Order -->
+    <div class="maps-modal" id="maps-modal">
+      <div class="map-location">
+        <img src="/image/img/maps.png" alt="maps" />
+
+        <!-- modal location detal -->
+        <div class="location-detail">
+          <h2>Select delivery location</h2>
+          <div class="row">
+            <img src="/image/icon/marker.svg" alt="marker" />
+            <div class="location-name">
+              <h4>Bank BJB Depok</h4>
+              <p>
+                Jl. Margonda Raya No.29, Depok, Kec. Pancoran Mas, Kota Depok,
+                Jawa Barat 16431
+              </p>
+            </div>
+          </div>
+          <button id="btn-confirm">Confirm location</button>
+        </div>
+
+        <!-- modal delivery -->
+        <div class="delivery">
+          <h2 id="text-head">Driver is On The Way</h2>
+          <div class="row">
+            <img src="/image/icon/marker.svg" alt="marker" />
+            <div class="location-name">
+              <h4>Bank BJB Depok</h4>
+              <p>
+                Jl. Margonda Raya No.29, Depok, Kec. Pancoran Mas, Kota Depok,
+                Jawa Barat 16431
+              </p>
+            </div>
+          </div>
+
+          <h2>Delivery Time</h2>
+          <p>10 - 15 Minutes</p>
+          <button id="btn-finish">Finished Order</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/menuLink.js"></script>
+    <script src="/js/modalMaps.js"></script>
+  </body>
+</html>

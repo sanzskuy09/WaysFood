@@ -11,7 +11,7 @@
     <!-- Css stryles -->
     <link rel="stylesheet" href="/css/general.css" />
     <link rel="stylesheet" href="/css/landing/header.css" />
-    <link rel="stylesheet" href="/css/editProfile/formEdit.css" />
+    <link rel="stylesheet" href="/css/addProduct/addProduct.css" />
   </head>
   <body>
     <!-- Header start -->
@@ -55,15 +55,15 @@
     <!-- Header end -->
 
     <!-- form edit Start -->
-    <section class="edit">
-      <h1>Edit Profile Partner</h1>
+    <section class="add-product">
+      <h1>Add Product</h1>
 
       <form>
         <div class="row">
           <input
             type="text"
-            name="name"
-            placeholder="Full Name"
+            name="title"
+            placeholder="Title"
             autocomplete="off"
           />
           <div class="upload">
@@ -74,30 +74,13 @@
           </div>
         </div>
         <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          autocomplete="off"
-        />
-        <input
           type="number"
-          name="phone"
-          placeholder="Phone"
+          name="price"
+          placeholder="Price"
           autocomplete="off"
         />
-        <div class="row">
-          <input
-            type="text"
-            name="address"
-            placeholder="Location"
-            autocomplete="off"
-          />
-          <button class="map" type="button">
-            Select On Map <img src="/image/icon/map.svg" alt="map" />
-          </button>
-        </div>
 
-        <a href="profilePartner.html" class="save" type="button">Save</a>
+        <button class="save" type="button">Save</button>
       </form>
     </section>
     <!-- form edit end -->

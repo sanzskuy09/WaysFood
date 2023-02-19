@@ -1,21 +1,21 @@
-.edit{
+.add-product{
   min-height: 100vh;
   padding: 10rem 10% 2rem;
 }
 
-.edit h1 {
+.add-product h1 {
   font-size: 2.5rem;
   font-weight: 800;
   margin-bottom: 4rem;
   margin-left: 2rem;
 }
 
-.edit form{
+.add-product form{
   display: flex;
   flex-direction: column;
 }
 
-.edit form input{
+.add-product form input{
   padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid #766C6C;
@@ -24,21 +24,21 @@
 }
 
 
-.edit form input::placeholder{
+.add-product form input::placeholder{
   color: #766C6C;
 }
 
-.edit form input[type='text']{
+.add-product form input[type='text']{
   flex: 1 1 80%;
 }
 
-.edit form .row {
+.add-product form .row {
   display: flex;
   gap: 1rem;
   width: 100%;
 }
 
-.edit form .row .upload{
+.add-product form .row .upload{
   position: relative;
   overflow: hidden;
   padding: 1rem;
@@ -47,7 +47,7 @@
   height: min-content;
 }
 
-.edit form .row .upload label{
+.add-product form .row .upload label{
   font-size: 1.2rem;
   font-weight: 700;
   display: flex;
@@ -55,12 +55,12 @@
   align-items: center;
 }
 
-.edit form .row .upload label img{
+.add-product form .row .upload label img{
   width: 10px;
   margin-left: 0.5rem;
 } 
 
-.edit form .row .upload input[type = 'file']{
+.add-product form .row .upload input[type = 'file']{
   position: absolute;
   top: 0;
   right: 0;
@@ -69,35 +69,15 @@
   cursor: pointer;
 }
 
-.edit form .row .upload input[type = 'file']::-webkit-file-upload-button{
+.add-product form .row .upload input[type = 'file']::-webkit-file-upload-button{
   cursor: pointer;
 }
 
-.edit form .row .map{
-  background-color: var(--btn-primary);
-  padding: 1rem;
-  height: min-content;
-  color: #fff;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5rem;
-  cursor: pointer;
-}
-
-.edit form .row .map img{
-  margin-left: 0.5rem;
-}
-
-.edit form .row .upload, .edit form .row .map{
+.add-product form .row .upload{
   flex: 1 1 28%;
 } 
 
-.edit form .save{
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  font-size: 1.2rem;
+.add-product form .save{
   background-color: var(--btn-primary);
   padding: 0.8rem;
   width: 20rem;
@@ -111,31 +91,29 @@
 
 
 /* ========================= Media Queries ========================== */
-
-
 /* tablet */
 @media (max-width: 767px) {
-  .edit form .row{
+  .add-product form .row{
     flex-wrap: wrap;
     gap: 0;
   }
 
-  .edit form .row .upload{
+  .add-product form .row .upload{
     margin-bottom: 2rem;
   }
 
-  .edit form .row .upload label{
+  .add-product form .row .upload label{
     gap: 0.5rem;
   }
 
-  .edit form .row .map img{
+  .add-product form .row .map img{
     margin-left: 1rem;
   }
 }
 
 /* Handphone */
 @media (max-width: 450px) {
-  .edit{
+  .add-product{
     padding: 10rem 8% 2rem;
   }
 }
