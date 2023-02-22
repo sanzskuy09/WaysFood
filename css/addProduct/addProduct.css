@@ -78,6 +78,9 @@
 } 
 
 .add-product form .save{
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
   background-color: var(--btn-primary);
   padding: 0.8rem;
   width: 20rem;
